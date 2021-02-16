@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  background: black;
+}
+
+.class {
+  color: #111;
+  animation: glow 5s ease-in-out infinite;
+  font-size: 80px;
+  letter-spacing: 10px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes glow {
+  100% {
+    color: #eee;
+    text-shadow: 0 0 10px #00acee, 0 0 50px #00acee, 0 0 80px #00acee;
+  }
+}
